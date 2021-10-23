@@ -92,7 +92,7 @@ function playGame(numberOfDoors) {
 
             doorElements[otherDoorStillInPlay.number].classList.replace("inactive", "active")
 
-            document.querySelector(".message").innerText = `You selected door ${selectedDoor.number + 1}. The game master opened every door, except door Nr. ${otherDoorStillInPlay.number + 1}. Behing every opened door there is a goat. \n\nWould you like to go with the other door instead of your initial selection?`
+            document.querySelector(".message").innerText = `You selected door ${selectedDoor.number + 1}. The game master opened every door, except door Nr. ${otherDoorStillInPlay.number + 1}. Behind every opened door there is a goat. \n\nWould you like to go with the other door instead of your initial selection?`
 
             function resetGame() {
                 gameOver = false
