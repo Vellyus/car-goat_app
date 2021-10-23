@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    padding: 2rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+.win-lose_count {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.win-lose_count span:first-child {
+    margin-right: 10rem;
+}
+
+.message_container {
+    padding: 1rem;
+    border: 2px solid black;
+    margin-bottom: 2rem;
+    height: 13rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message {
+    font-size: 1.4rem;
+}
+
+
+.doors_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(4.5rem, 0.2fr));
+    grid-gap: .8rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.door {
+    background: #E3E1E1;
+    padding: 2rem 0;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.door:hover {
+    background-color: #cccaca;
+    transition: 1s;
+}
+
+.inactive {
+    opacity: .3;
+}
+
+.selected {
+    border: 2px solid red;
+}
+
+.buttons {
+    margin: 2rem;
+}
+
+button {
+    font-size: 2rem;
+    margin: 2rem;
+    width: 6rem;
+    height: 3.5rem;
+    cursor: pointer;
+}
+
+.restartButton {
+    width: 12rem;
+}
+
+/* MEDIA QUERIES */
+@media(min-width: 48rem) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media(min-width: 64rem) {
+
+    body {
+        margin: 0 8rem;
+    }
+
+    .doors_grid {
+        grid-template-columns: repeat(auto-fit, minmax(4.5rem, 0.08fr));
+    }
+}
+
+@media(min-width: 64.125em) {
+    body {
+        margin: 0 12rem;
+    }
+
+}
+
+@media(min-width: 118.75em) {
+    html {
+        font-size: 48px;
+    }
+
+    body {
+        margin: 0 20rem;
+    }
+
+    .doors_grid {
+        grid-template-columns: repeat(auto-fit, minmax(4.5rem, 0.06fr));
+    }
+
+    .selected {
+        border: 8px solid red;
+    }
+
+}
