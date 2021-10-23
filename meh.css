@@ -126,8 +126,4 @@ button {
         grid-template-columns: repeat(auto-fit, minmax(4.5rem, 0.06fr));
     }
 
-    .selected {
-        border: 8px solid red;
-    }
-
 }
